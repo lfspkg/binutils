@@ -2,6 +2,9 @@
 set --
 set -- "$@"
 set -- "$@" --prefix=$HOME/stow/gdb
+set -- "$@" --disable-silent-rules
+set -- "$@" --without-intl
+
 
 ./configure "$@"
 # `configure' configures this package to adapt to many kinds of systems.
